@@ -1,0 +1,45 @@
+permgen vs metaspace
+spring boot rest webclient
+spring security
+what are spring bean lifecycle
+@Qualifier
+can we use equals operator for double value (.equal)
+doReturn - when ?? when - then ?? difference or when to use this in junit mockito
+what is weakhashmap
+jvm information
+covariant return type in java
+tradeoff between soap and rest
+expose soap endpoint in spring boot
+spring mvc vs spring boot
+dependency injection vs inversion of control
+request interceptors in spring
+deadlock vs race condition
+operating system
+networking (dns)
+priority queue
+game theory
+segmentation
+scheduling algorithm
+assoociation,aggregation and composition
+default hashcode implementation
+does object address change after garbage collection(https://stackoverflow.com/questions/59011321/does-garbage-collection-change-the-object-addresses-in-java)
+
+
+
+
+
+
+
+Programs
+1) count substring in string in java
+2) deduce departure and destination from ticket in java
+3) given an array find all elements in ouput greater than elemets at right
+(17,5,13,8,16,1,2)
+hint : scan from the right and keep max variable
+
+4)print 2nd largest element in array without using loop in java
+5)find if string is consecutive number or not
+
+"12345" -> consecutive
+"12354" -> not
+"121314" -> consecutive number is 12,13,14
