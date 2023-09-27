@@ -1,9 +1,6 @@
 package com.practice.java8;
 
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class FunctionalInterfacePractice {
 
@@ -12,6 +9,7 @@ public class FunctionalInterfacePractice {
     * Predicate  - Takes in input and returns boolean
     * Functional - Takes in input and returns output
     * Consumer - Takes in input and does not return anything
+    * BiConsumer - Takes in 2 input parameters and does not return anything
     * Supplier - Only returns output
     * */
     public static void main(String[] args) {
@@ -36,6 +34,16 @@ public class FunctionalInterfacePractice {
         Supplier<Double> testSupplier = () -> Math.random();
         System.out.println(testSupplier.get());
 
+        //IntBinary Operator
+        IntBinaryOperator intBinaryOperator = (int a, int b) -> a + b;
+        System.out.println(intBinaryOperator.applyAsInt(5,4));
+
+        //Bi Consumer
+        BiConsumer<Integer,String> biConsumer = (Integer a, String b) -> System.out.println("we have "+a+" "+b);
+//        biConsumer.accept(5,"Apple");
+
+        BiConsumer<Integer,String> biConsumer2 = (Integer a, String b) -> System.out.println("and after eating all "+a+" "+b+" 0 apple remain");
+        biConsumer.andThen(biConsumer2).accept(4,"Apples");
     }
 }
 
